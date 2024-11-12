@@ -1,1 +1,60 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+    ul {
+      list-style-type: square;
+      margin: 20px 0;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Sample HTML Page</h1>
+
+  <p id="myParagraph">This is a simple paragraph. Click the button to change this text.</p>
+
+  <button onclick="changeText()">Click Me!</button>
+
+  <h2>Here’s a List of Some Items:</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <script>
+    function changeText() {
+      document.getElementById('myParagraph').innerText = 'The text has been changed!';
+    }
+  </script>
+
+</body>
+</html>
